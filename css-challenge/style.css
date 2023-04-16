@@ -567,6 +567,7 @@ html {
     list-style-type: none;
     font-weight: 500;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .Links ul li ion-icon {

@@ -2,25 +2,39 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 10px 100px;
     background-color: transparent;
     color: #fff;
     }
     
     .nav-links a {
     color: #fff;
+    font-weight: 600;
     
     }
     .accounts{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
+        padding: 10px;
+    }
+    .accounts li{
+        list-style: none;
+        margin-right: 15px;
+
+    }
+    .accounts li a{
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        
     }
     
     /* LOGO */
     .logo {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 600;
     }
     
     /* NAVBAR navlinks */
@@ -80,7 +94,7 @@
         user-select: none;
         }
         
-        /* APPLYING MEDIA QUERIES */
+        /* MEDIA QUERY */
         @media (max-width: 768px) {
         .navlinks {
         display:none;
@@ -95,6 +109,14 @@
         .navlinks li + li {
         margin-top: 12px;
         }
+        .accounts li{
+            display: none;
+            
+        }
+        .accounts button{
+            display: none;
+           
+        }
         
         input[type=checkbox]:checked ~ .navlinks {
         display: block;
@@ -102,11 +124,12 @@
         
         .hamburger {
         display: block;
-        /* margin-left: 100%; */
+        margin-left: 500%;
         }
-        .accounts {
-            display: grid;
-            gap: 10px;
-        
         }
+        @media  screen and (max-width:399px) {
+            .hamburger {
+                display: block;
+                margin-left: 60%;
+                }
         }
