@@ -1,0 +1,112 @@
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: transparent;
+    color: #fff;
+    }
+    
+    .nav-links a {
+    color: #fff;
+    
+    }
+    .accounts{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    /* LOGO */
+    .logo {
+    font-size: 30px;
+    }
+    
+    /* NAVBAR navlinks */
+    .navlinks {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    }
+
+    
+    .navlinks li {
+    padding: 5px 14px;
+    list-style: none;
+  
+    }
+    .nav-links li a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    input[type=checkbox] {
+        display: none;
+        } 
+        
+
+        .accounts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        
+        .accounts button {
+            background-color: #23a6f0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .accounts button ion-icon {
+            margin-left: 8px;
+        
+        }
+        
+        .accounts button:hover {
+            cursor: pointer;
+            padding: 12px 18px;
+            transition: 0.3s;
+        }
+        /* HAMBURGER navlinks */
+        .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+        }
+        
+        /* APPLYING MEDIA QUERIES */
+        @media (max-width: 768px) {
+        .navlinks {
+        display:none;
+        position: absolute;
+        background-color:rgb(10, 11, 11);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        }
+        
+        .navlinks li + li {
+        margin-top: 12px;
+        }
+        
+        input[type=checkbox]:checked ~ .navlinks {
+        display: block;
+        }
+        
+        .hamburger {
+        display: block;
+        /* margin-left: 100%; */
+        }
+        .accounts {
+            display: grid;
+            gap: 10px;
+        
+        }
+        }

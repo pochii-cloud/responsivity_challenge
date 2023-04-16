@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat';
+    font-weight: 300;
+
+}
+
+.main {
+    background-color: #fafafa;
+}
+
+.landing {
+    background-image: url('/css-challenge/images/hero.png');
+    /* background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60))
+    ,url('/css-challenge/images/hero.png'); */
+    background-color: gray;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    /* filter:brightness(60%); */
+
+}
+
+.textrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textrow h1 {
+    font-size: 40px;
+}
+.textrow p{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.textrowbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.textrowbuttons button {
+    padding: 15px 25px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.textrowbuttons button:hover {
+    background-color: #23a6f0;
+    cursor: pointer;
+    border: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    top: -10vh;
+
+}
+
+.card {
+    /* border: 1px solid black; */
+    background-color: #ffff;
+    display: grid;
+    align-items: start;
+    padding: 15px;
+    gap: 10px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.card ion-icon {
+    font-size: 50px;
+    color: #23a6f0;
+}
+
+.card3 {
+    background-color: #23a6f0;
+    color: white;
+    display: grid;
+    align-items: start;
+    padding: 15px;
+    gap: 10px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.card3 ion-icon {
+    font-size: 50px;
+}
+
+.maincard ion-icon {
+    font-size: 50px;
+    color: #23a6f0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.pricingcardcontent li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pricingcardcontent .active {
+    font-size: 25px;
+    color: #2dc071;
+
+}
+
+.pricingcardcontent .inactive {
+    font-size: 25px;
+    color: #bdbdbd;
+}
+
+.borderlesscards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    background-color: #ffff;
+    padding: 20px;
+}
+
+.maincard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 15px;
+    margin: 15px;
+    font-size: 12px;
+    width: 20%;
+
+}
+
+.industry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+  .Header h1 {
+    font-size: 3rem;
+  }
+  .Header p {
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: larger;
+    color: #737272;
+  }
+.industrycards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.industrycard {
+    background-color: white;
+    border: 1px solid #dedede;
+    width: 18%;
+    height: auto;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+}
+
+.industrycard img {
+    margin-top: 20px;
+    width: 60%;
+    height: 45%;
+}
+
+.ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.ratings .star {
+    color: #f3cd03;
+}
+
+.ratings .star-outline {
+    color: #f3cd03;
+}
+
+.labels {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.labels img {
+    display: flex;
+    align-items: center;
+    width: 6vw;
+    height: 6vh;
+    padding: 5px;
+    margin: 15px;
+}
+
+.subscribediv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    color: white;
+
+}
+
+.subscribeform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    width: 60%;
+    padding: 20px 30px;
+    font-size: 12px;
+    background: linear-gradient(to right, #074588, #d11589);
+}
+
+.inputs {
+    display: flex;
+    width: 35%;
+
+}
+
+.email {
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border: none;
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.email:focus {
+    outline: none;
+    font-size: 15px;
+}
+
+.subscribebutton {
+    background-color: #23a6f0;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.landingtext {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.textrow {
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.pricing {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricecards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fafafa;
+}
+
+.pricingcard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 5px;
+    padding: 20px;
+    height: auto;
+    border: 2px solid #23a6f0;
+    border-radius: 5px;
+    background-color: #ffff;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+    transition-timing-function: ease-out;
+}
+
+.pricingcard:hover {
+    color: white;
+    background-color: #252b42;
+    cursor: pointer;
+    padding-top: 50px;
+    margin: 10px -5px;
+    border-right: none;
+
+
+}
+
+.pricingcardheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricingcardprice {
+    color: #23a6f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricingcardprice h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.pricingcardprice span {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.pricingcardcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.pricingcardcontent li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.pricingcardcontent button {
+    background-color: #23a6f0;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    font-weight: 600;
+}
+
+.branchessection {
+    background-color: #252b42;
+    color: white;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.branches {
+    display: flex;
+    width: 80%;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.branchestext {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.branchestext h2 {
+    font-size: 40px;
+}
+
+.branchestext span {
+    font-size: 18px;
+}
+
+.branchesimage {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.branchesimage img {
+    width: 80%;
+    height: 40%;
+}
+
+.AppointmentSection {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Appointment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70vh;
+    width: 60%;
+    background: white;
+    position: relative;
+    margin-top: -15%;
+}
+
+.Appointmentimage {
+    width: 35%;
+}
+
+.Appointmentimage img {
+    height: 69.5vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Appointmentform {
+    display: grid;
+    align-items: center;
+    width: 60%;
+}
+
+.Appointmentform h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.Appointmentform form {
+    display: grid;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 20px;
+
+}
+
+.Appointmentform form input {
+    background-color: #f9f9f9;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.Appointmentform form select {
+    background-color: #f9f9f9;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.Appointmentform form input:focus {
+    outline: none;
+}
+
+.Appointmentform form select:focus {
+    outline: none;
+}
+
+.appointmentbtn {
+    background-color: #23a6f0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.consultingsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10%;
+}
+
+.consultingsectionbutton button {
+    background-color: #23a6f0;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffff;
+    padding: 60px 5px;
+}
+
+.lfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    color: #7a7a7a;
+}
+
+.Links h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.Links ul {
+    list-style-type: none;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.Links ul li ion-icon {
+    color: #23a6f0;
+    font-size: 25px;
+}
+
+.Links ul li {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: #7a7a7a;
+}
+
+.sociallinks a {
+    color: #23a6f0;
+    margin: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .textrow h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        display: grid;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        padding: 25px;
+    }
+
+    .card3 {
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        padding: 25px;
+    }
+
+    .borderlesscards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .maincard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        gap: 15px;
+        margin: 15px;
+        font-size: 12px;
+        width: 40%;
+
+    }
+
+    .subscribediv {
+        width: 100%;
+    }
+
+    .subscribeform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .subscribeform .subscribebutton {
+        width: 60%;
+    }
+
+    .branchessection {
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .branches {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .branchestext {
+        width: 100%;
+    }
+
+    .branchesimage {
+        width: 100%;
+    }
+
+    .branchesimage img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .pricecards {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #fafafa;
+    }
+
+    .pricingcard {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 20px;
+        margin: 50px 5px;
+        padding: 30px;
+    }
+
+    .industrycards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .industrycard {
+        background-color: white;
+        border: 1px solid #dedede;
+        width: 50%;
+        height: auto;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+    }
+    .labels{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .labels img{
+        width: 30%;
+        height: 30%;
+        margin-top: 40px;
+    }
+    .Appointment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 60%;
+        background: white;
+        position: relative;
+        margin-top: -15%;
+    }
+
+    .Appointmentimage {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .Appointmentimage img {
+        height: 29vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Appointmentform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Appointmentform form {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px;
+
+    }
+
+}
