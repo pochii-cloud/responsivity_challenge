@@ -16,7 +16,7 @@ html {
 }
 
 .landing {
-    background-image: url('/css-challenge/images/hero.png');
+    background-image: url('./images/hero.png');
     /* background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60))
     ,url('/css-challenge/images/hero.png'); */
     background-color: gray;
