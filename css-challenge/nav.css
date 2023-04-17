@@ -11,12 +11,10 @@
     .nav-links a {
     color: #fff;
     font-weight: 600;
-    
     }
     .accounts{
         display: flex;
         justify-content: center;
-        align-items: flex-end;
         padding: 10px;
     }
     .accounts li{
@@ -40,8 +38,9 @@
     /* NAVBAR navlinks */
     .navlinks {
     display: flex;
-    gap: 1em;
-    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
     }
 
     
@@ -127,9 +126,21 @@
         margin-left: 500%;
         }
         }
-        @media  screen and (max-width:399px) {
+        @media  screen and (max-width:400px) {
             .hamburger {
                 display: block;
-                margin-left: 60%;
+                margin-left: 230%;
+                }
+        }
+        @media screen and (max-width: 330px) {
+             .hamburger {
+                display: block;
+                margin-left: 100%;
+                }
+        }
+         @media screen and (max-width: 300px) {
+             .hamburger {
+                display: block;
+                margin-left: 40%;
                 }
         }
